@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy Fazbear's Pizza | Brasil</title>
+    <style>
+    #botao-chat {
+      position: fixed; bottom: 20px; right: 20px;
+      background: none; border: none; cursor: pointer; z-index: 999;
+    }
+    #botao-chat img { width: 80px; transition: transform 0.2s; }
+    #botao-chat:hover img { transform: scale(1.1); }
+    #janela-chat {
+      display: none; position: fixed; bottom: 110px; right: 20px;
+      width: 300px; background: #1a1a1a; color: #fff;
+      border-radius: 10px; padding: 12px; z-index: 999;
+      box-shadow: 0 0 15px #000;
+    }
+    #mensagens { height: 220px; overflow-y: auto; margin-bottom: 8px; font-size: 14px; }
+    #mensagens p { margin: 6px 0; }
+    #entrada { width: 70%; padding: 6px; }
+    #janela-chat button { padding: 6px 10px; }
+  </style>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO DO SITE -->
+    <header>
+        <a href="#inicio" class="logo">
+        <img src="img/logofnf-removebg-preview.png" alt="Freddy Fazbear's Pizza">
+        </a>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- SEÇÃO DE CONTATO -->
+        <section id="contato">
+            <h2>Entre em contato</h2>
+
+            <p>
+                Estamos preparando nossa chegada à sua cidade!
+                Em breve, mais novidades.
+            </p>
+        </section>
+
+        <button id="botao-chat" title="Fale com a gente">
+    <img src="img/ursinho-removebg-preview.png" alt="Ursinho">
+  </button>
+
+  <div id="janela-chat">
+    <div id="mensagens">
+      <p><b>Helpy:</b> Oi! Pergunte sobre horário, cardápio, entrega ou contato.</p>
+    </div>
+    <input id="entrada" type="text" placeholder="Digite sua pergunta...">
+    <button id="enviar">Enviar</button>
+  </div>
+
+  <script src="js/main.js"></script>
+
+    </main>
+
+     <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 Freddy Fazbear's Pizza Brasil.</p>
+        <p>Projeto acadêmico fictício inspirado em Five Nights at Freddy's.</p>
+    </footer>
+
+
+</body>
+</html>
